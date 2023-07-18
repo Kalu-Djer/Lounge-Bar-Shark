@@ -118,7 +118,6 @@ section {
 .home-img img {
     width: 100%;
     height: auto;
-    /*box-shadow: #ff9f0d 0px 1px 25px;*/
 }
 
 
@@ -164,21 +163,6 @@ span {
     box-shadow: #ff9f0d 0px 1px 25px;
 }
 
-/*.btn2 {
-    display: inline-block;
-    margin-left: 30px;
-    font-size: var(--p-font);
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-bottom: 3px solid var(--main-color);
-    color: var(--main-color);
-    transition: all .50s ease;
-}
-
-.btn2:hover {
-    transform: scale(1.1) translatex(12px);
-} */
-
 
 /*----------------------Container-----------------------*/
 
@@ -191,11 +175,7 @@ header.sticky {
 .container {
     margin-top: 30px;
     background-color: var(--other-color);
-    /* background: url(assets/our-menu-bg-3.jpg);  */
     width: 100%;
-    /* height: auto; */
-    /* background-position: center;
-     background-size: cover; */
     background-attachment: fixed; 
      padding: 30px 14% 70px; 
     display: grid;
@@ -220,17 +200,6 @@ header.sticky {
  .container-box h3 {
     pointer-events: none;
 } 
-
-/* .container-box a {
-    color: var(--second-color);
-    font-size: var(--p-font);
-    letter-spacing: 1px;
-    transition: all .5s ease;
-}
-
-.container-box a:hover {
-    color: var(--main-color);
-} */
 
 .container-box .container-box-link {
     display: block;
@@ -274,7 +243,7 @@ header.sticky {
 
 .row {
     position: relative;
-    padding: 10px 35px 40px; 
+    padding: 10px 35px 40px;
     background: var(--other-color);
     border-radius: 3rem;
 }
@@ -284,19 +253,14 @@ header.sticky {
     height: auto;
     transition: transform .5s ease;
     cursor: pointer;
-    /*border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;*/
-    border-radius: 50%;
-    padding: 30px 30px 5px 30px;
+     border-radius: 50%;
+    padding: 30px 30px 15px 30px;
 }
 
 .row h3 {
     font-size: 18px;
     margin-bottom: 5px;
     font-weight: 700;
-    /*padding-top: 15px;
-    padding-left: 40px;
-    padding-right: 40px;*/
 
 }
 
@@ -305,17 +269,12 @@ header.sticky {
     font-size: var(--p-font);
     line-height: 20px;
     margin-bottom: 1.1rem;
-    /*padding-left: 40px;
-    padding-right: 40px;*/
 }
 
 .in-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 30px;*/
 }
 
 .in-text .price h6 {
@@ -412,7 +371,6 @@ header.sticky {
 
 
 .wolt {
-    /* background: url(assets/our-menu-bg-3.jpg); */
     width: 100%;
     height: auto;
     background-position: center;
@@ -652,6 +610,7 @@ header.sticky {
        :root{
         --big-font: 2.5rem;
         --h2-font: 1.8rem;
+        --h3-font: 25px;
     }
 
     .home {
@@ -666,12 +625,32 @@ header.sticky {
         font-size: 25px;
     }
 
+
 /*----------------Wolt------------------*/
 
     .wolt-content img {
         width: 250px;
         height: 250px;
     }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --big-font: 2rem;
+    }
+
+    .home-text p {
+        font-size: 16px;
+    }
+
+    .home {
+        height: 100vh;
+    }
+
+    .middle-text {
+        margin-top: 30px;
+    }
+
 }
 
 
